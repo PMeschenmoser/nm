@@ -44,11 +44,4 @@ public class QueryWrapper {
         }
     }
 
-    public static void csvQuery(File in, File out, int[] queryfields, String[] checkvalues, int[] outfields, int maxlines) {
-        try {
-            QueryProcessor.run(new BufferedReader(new FileReader(in)), out,  queryfields,  checkvalues,  outfields,  maxlines);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }

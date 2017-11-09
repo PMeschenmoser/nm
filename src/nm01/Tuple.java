@@ -17,7 +17,7 @@ public class Tuple {
 
     public boolean fieldCheck(int[] indexes, String[] values){
         for (int i= 0; i<indexes.length; i++){
-            if (indexes[i] >= fields.length || !fields[indexes[i]].equals(values[i])) return false;
+            if (indexes[i] >= fields.length || !fields[indexes[i]].toLowerCase().equals(values[i].toLowerCase())) return false;
         }
         return true;
     }
