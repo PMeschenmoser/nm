@@ -6,12 +6,14 @@ package nm01;
 public class Tuple {
     private String[] fields;
     private String s;
+    private Integer id;
     private boolean isGood;
     private boolean isFeatured;
 
     public Tuple(String input){
         s = input.replaceAll(",\\s", ""); //replace non-value-separating commas in the page title
         fields = s.split(",");
+        id = Integer.parseInt(fields[0].replaceAll("\\(", ""));
     }
 
 
@@ -31,14 +33,15 @@ public class Tuple {
         return tmp.substring(0, tmp.length()-1) + "\n";
     }
 
-    public String getFieldsExtended(int[] indices){
+    public String getAllFieldsExtended(){
         int f = isFeatured ? 1 : 0;
         int g = isGood ? 1 : 0;
-        return getFields(indices) + "," + f + "," + g;
+        String out = s+ "," + f + "," + g +"\n";
+        return out;
     }
 
-    public String getID(){
-        return fields[0];
+    public Integer getID(){
+        return id;
     }
     public void setGood(boolean b){
         isGood = b;

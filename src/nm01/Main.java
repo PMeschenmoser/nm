@@ -1,6 +1,8 @@
 package nm01;
 
 import java.io.File;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by P. Meschenmoser on 08.11.2017.
@@ -18,7 +20,7 @@ public class Main {
         File categories = new File("D:\\onedrive2\\OneDrive\\WS1718\\NM\\01\\categories.csv");
         File good = new File("D:\\onedrive2\\OneDrive\\WS1718\\NM\\01\\good.csv");
         File featured = new File("D:\\onedrive2\\OneDrive\\WS1718\\NM\\01\\featured.csv");
-
+        File merged = new File("D:\\onedrive2\\OneDrive\\WS1718\\NM\\01\\merged.csv");
 
         //get some preview on the gzips, extract 53 lines:
         // QueryWrapper.preview(pages, preview, 53);
@@ -44,8 +46,11 @@ public class Main {
 
 
             //Exercise 1f)
+            //cache ID's to disk:
+
             //QueryWrapper.gzipQuery(categorylinks, good, new int[]{1}, new String[]{"'Good_articles'"}, new int[]{0}, 2000000000);
-            QueryWrapper.gzipQuery(categorylinks, featured, new int[]{1}, new String[]{"'Featured_articles'"}, new int[]{0}, 2000000000);
+            //QueryWrapper.gzipQuery(categorylinks, featured, new int[]{1}, new String[]{"'Featured_articles'"}, new int[]{0}, 2000000000);
+            Merger.run(articles, merged, ListImport.importFile(good), ListImport.importFile(featured));
 
 
 
