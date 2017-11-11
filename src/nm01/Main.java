@@ -10,8 +10,10 @@ import java.io.File;
 
 public class Main {
     public static void main(String[] args){
+            //You only need to adapt the following path. Then, uncomment some of the below methods.
+            String bigdatafolder = "A:\\onedrive-a\\OneDrive\\WS1718\\NM\\01\\";
+
             //initial input files
-            String bigdatafolder = "D:\\onedrive2\\OneDrive\\WS1718\\NM\\01\\";
             File pages = new File(bigdatafolder + "enwiki-20171001-page.sql.gz");
             File categorylinks = new File(bigdatafolder + "enwiki-20171001-categorylinks.sql.gz");
 
@@ -27,7 +29,7 @@ public class Main {
             /*
                 At first, get some preview on the gzips, extract 53 lines:
             */
-            // QueryWrapper.preview(pages, preview, 53);
+            //QueryWrapper.preview(pages, preview, 53);
             // QueryWrapper.preview(categorylinks, previewlinks, 53);
 
 
