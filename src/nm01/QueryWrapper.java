@@ -4,12 +4,15 @@ import java.io.*;
 import java.util.zip.GZIPInputStream;
 
 /**
- * Created by P. Meschenmoser on 08.11.2017.
+ * Network Modeling, Assignment 01
+ * Authors: P. Meschenmoser, L. Shkoza
+ * Date: 10.11.2017.
  */
-public class QueryWrapper {
 
+public class QueryWrapper {
     public static void preview(File in, File out, int maxlines) {
         try {
+            //very simple extraction of 'maxlines' lines from 'in' (gzip) to 'out'.
             GZIPInputStream is = new GZIPInputStream(new FileInputStream(in));
             InputStreamReader r = new InputStreamReader(is);
             BufferedReader buffered = new BufferedReader(r);
@@ -28,12 +31,11 @@ public class QueryWrapper {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 
     public static void gzipQuery(File in, File out, int[] queryfields, String[] checkvalues, int[] outfields, int maxlines) {
         try {
+            //wrapper for QueryProcessor, to instantiate BufferedReader
             GZIPInputStream is = new GZIPInputStream(new FileInputStream(in));
             InputStreamReader r = new InputStreamReader(is);
             QueryProcessor.run(new BufferedReader(r), out,  queryfields,  checkvalues,  outfields,  maxlines);
@@ -43,5 +45,4 @@ public class QueryWrapper {
             e.printStackTrace();
         }
     }
-
 }

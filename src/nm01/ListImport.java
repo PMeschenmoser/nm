@@ -2,15 +2,21 @@ package nm01;
 
 import java.io.*;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
- * Created by P. Meschenmoser on 10.11.2017.
+ * Network Modeling, Assignment 01
+ * Authors: P. Meschenmoser, L. Shkoza
+ * Date: 10.11.2017.
  */
-public class ListImport {
 
+public class ListImport {
     public static LinkedList importFile(File f) {
-       LinkedList<Integer> l = new LinkedList<Integer>();
+
+        /*
+            Reads in a sequence of article IDs (separated by line breaks) and returns it as a linked list.
+            for simplicity and better efficiency & modularity. Input for Join.run(...)
+        */
+        LinkedList<Integer> l = new LinkedList<Integer>();
         try {
             InputStreamReader r = new InputStreamReader(new FileInputStream(f));
             BufferedReader br = new BufferedReader(r);
