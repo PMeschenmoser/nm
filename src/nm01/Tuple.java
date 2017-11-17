@@ -14,7 +14,7 @@ public class Tuple {
     private boolean isFeatured;
 
     public Tuple(String input){
-        s = input.replaceAll(",\\s", ""); //replace non-value-separating commas in the page title
+        s = input.replaceAll(",_", ""); //replace non-value-separating commas in the page title
         fields = s.split(",");
         id = Integer.parseInt(fields[0].replaceAll("\\(", ""));
     }
