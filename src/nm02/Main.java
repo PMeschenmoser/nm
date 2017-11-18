@@ -20,8 +20,9 @@ public class Main {
         articles.add("article1");
         articles.add("article2");
         articles.add("article3");
+        articles.add("article5");
         algo(edges, articles);
-
+        System.out.println("Manual test for article 2:" + (Math.log(2)+Math.log(2)+Math.log(1))/6);
     }
 
     private static void algo(List<String> edges, List<String> articles){
@@ -47,7 +48,7 @@ public class Main {
         }
 
         for (String article : articles){ //for each article
-            if (users_per_article.get(article).size() > 1){
+            if (users_per_article.getOrDefault(article, new LinkedList<Integer>()).size() > 1){
                 List<Integer> tmp_list = users_per_article.get(article);
                 Integer[] users =  tmp_list.toArray(new Integer[tmp_list.size()]);
                 double tmp_log = 1;
@@ -61,9 +62,9 @@ public class Main {
                     }
                 }
                 double team_diversity = Math.log(tmp_log)/(users_per_article.get(article).size()*(users_per_article.get(article).size()-1));
-                System.out.println(team_diversity);
+                System.out.println(article+":"+ team_diversity);
             } else {
-                System.out.println("undefined");
+                System.out.println(article+":undefined team diversity");
             }
         }
     }

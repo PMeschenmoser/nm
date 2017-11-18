@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1db6e7c-f549-4196-9721-cb8916cd548b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nm02/Edge.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nm02/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nm01/Main.class" afterPath="$PROJECT_DIR$/target/classes/nm01/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nm01/QueryProcessor.class" afterPath="$PROJECT_DIR$/target/classes/nm01/QueryProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nm01/Tuple.class" afterPath="$PROJECT_DIR$/target/classes/nm01/Tuple.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nm02/Main.java" afterPath="$PROJECT_DIR$/src/nm02/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,7 +27,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nm01/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-161">
+            <state relative-caret-position="408">
               <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding />
             </state>
@@ -63,11 +57,10 @@
       <file leaf-file-name="ListImport.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nm01/ListImport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="68">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#506#515#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,7 +89,7 @@
       <file leaf-file-name="Tuple.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nm01/Tuple.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="255">
               <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding>
                 <element signature="e#1604#1605#0" expanded="true" />
@@ -109,12 +102,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nm02/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
-              <caret line="61" column="17" lean-forward="false" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+            <state relative-caret-position="973">
+              <caret line="66" column="70" lean-forward="false" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
               <folding>
-                <element signature="e#888#911#0" expanded="true" />
-                <element signature="e#982#999#0" expanded="true" />
-                <element signature="e#1089#1107#0" expanded="true" />
+                <element signature="e#1021#1044#0" expanded="true" />
+                <element signature="e#1115#1132#0" expanded="true" />
+                <element signature="e#1222#1240#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -221,9 +214,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -749,7 +742,8 @@
       <workItem from="1510415259726" duration="2238000" />
       <workItem from="1510418727737" duration="29000" />
       <workItem from="1510418805382" duration="373000" />
-      <workItem from="1510950461619" duration="11347000" />
+      <workItem from="1510950461619" duration="11994000" />
+      <workItem from="1511012275519" duration="652000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1510245232536</created>
@@ -772,11 +766,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510951285680</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="nm02">
+      <created>1510964812317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1510964812317</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13996000" />
+    <option name="totallyTimeSpent" value="15295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -831,7 +832,8 @@
     <MESSAGE value="final" />
     <MESSAGE value="eclipse support&#10;" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="nm02" />
+    <option name="LAST_COMMIT_MESSAGE" value="nm02" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -872,7 +874,6 @@
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#506#515#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -934,7 +935,6 @@
           <caret line="18" column="60" lean-forward="false" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#506#515#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1147,7 +1147,7 @@
     <entry file="file://$PROJECT_DIR$/d/preview.txt" />
     <entry file="file://$PROJECT_DIR$/src/nm01/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
+        <state relative-caret-position="408">
           <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding />
         </state>
@@ -1156,18 +1156,17 @@
     <entry file="file://$PROJECT_DIR$/.project" />
     <entry file="file://$PROJECT_DIR$/src/nm01/ListImport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="68">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#506#515#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nm01/Tuple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="255">
           <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding>
             <element signature="e#1604#1605#0" expanded="true" />
@@ -1176,14 +1175,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nm02/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nm02/User.java" />
     <entry file="file://$PROJECT_DIR$/src/nm02/Edge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1194,12 +1186,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nm02/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="61" column="17" lean-forward="false" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+        <state relative-caret-position="973">
+          <caret line="66" column="70" lean-forward="false" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
           <folding>
-            <element signature="e#888#911#0" expanded="true" />
-            <element signature="e#982#999#0" expanded="true" />
-            <element signature="e#1089#1107#0" expanded="true" />
+            <element signature="e#1021#1044#0" expanded="true" />
+            <element signature="e#1115#1132#0" expanded="true" />
+            <element signature="e#1222#1240#0" expanded="true" />
           </folding>
         </state>
       </provider>
