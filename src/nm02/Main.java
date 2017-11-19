@@ -3,8 +3,11 @@ package nm02;
 import java.util.*;
 
 /**
- * Created by HP on 17.11.2017.
+ * Network Modeling, Assignment 02
+ * Authors: P. Meschenmoser, L. Shkoza
+ * Date: 18.11.2017.
  */
+
 public class Main {
     public static void main(String[] args){
         LinkedList edges = new LinkedList<Edge>();
@@ -21,23 +24,24 @@ public class Main {
         articles.add("article2");
         articles.add("article3");
         articles.add("article5");
-        algo(edges, articles);
+        team_div(edges, articles);
         System.out.println("Manual test for article 2:" + (Math.log(2)+Math.log(2)+Math.log(1))/6);
     }
 
-    private static void algo(List<String> edges, List<String> articles){
+    private static void team_div(List<String> edges, List<String> articles){
         Iterator iter_edges = edges.iterator();
         HashMap<String, List<Integer>> users_per_article = new HashMap<String, List<Integer>>();
         HashMap<String, Integer>  intersection_lookup = new HashMap<String, Integer>(); //for intersections
-        HashMap<Integer, Integer>  articles_per_user = new HashMap<Integer, Integer>(); //use inclusion/exclusion principle, store counts
+        HashMap<Integer, Integer>  article_counts = new HashMap<Integer, Integer>(); //use inclusion/exclusion principle, store counts
 
         while (iter_edges.hasNext()) {
             Edge e = (Edge) iter_edges.next();
-            articles_per_user.put(e.getUser(), articles_per_user.getOrDefault(e.getUser(),0)+1);
+            article_counts.put(e.getUser(), article_counts.getOrDefault(e.getUser(),0)+1);
             //user_per_article: if edge exists here, we have intersections
             List<Integer> possible_intersections =  users_per_article.getOrDefault(e.getArticle(), new LinkedList());
 
             for (Integer u : possible_intersections) {
+                //make unique key out of two user IDs and increase intersection count for this combination.
                 Integer val = intersection_lookup.getOrDefault(Math.min(e.getUser(),u) + "-" + Math.max(e.getUser(),u), 0);
                 intersection_lookup.put(Math.min(e.getUser(),u) + "-" + Math.max(e.getUser(),u) , val+1);
             }
@@ -56,7 +60,7 @@ public class Main {
                     for (int j=i+1; j<users.length; j++){
                         int intersection = intersection_lookup.get(Math.min(users[i],users[j])+ "-" +Math.max(users[i],users[j]));
                         if (intersection >  0){
-                            int union = articles_per_user.get(users[i]) +  articles_per_user.get(users[j]) - intersection;
+                            int union = article_counts.get(users[i]) +  article_counts.get(users[j]) - intersection;
                             tmp_log *= union/intersection;
                         }
                     }
